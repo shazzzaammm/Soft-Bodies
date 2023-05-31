@@ -6,7 +6,7 @@ let grabbedParticle = null;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  let r = 200;
+  let r = max(width / 5, height / 5);
   for (let a = 0; a < TWO_PI; a += 0.1) {
     x = cos(a) * r;
     y = sin(a) * r;
